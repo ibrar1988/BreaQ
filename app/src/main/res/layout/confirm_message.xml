@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/alert_dialog_bg">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/coolNavy"
+        android:text="Alert"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="15sp"
+        android:textColor="@color/coolNavy"
+        android:text="Dialog Message"/>
+
+    <Button
+        android:id="@+id/btnNegative"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textMessage"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:background="@color/coolBlue"/>
+
+    <Button
+        android:id="@+id/btnPositive"
+        android:layout_below="@+id/textMessage"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/coolBlue"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:text="Ok"/>
+
+</RelativeLayout>

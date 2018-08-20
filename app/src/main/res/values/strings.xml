@@ -1,0 +1,528 @@
+<resources>
+    <string name="app_name">BreaQ</string>
+    <string name="app_title">BreaQ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash_screen">SplashscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="network_error">Network Error</string>
+
+    <string name="default_notification_channel_id" translatable="false">Bento Notification Channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">Bento Notification Channel</string>
+
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="add">Add</string>
+
+    <!-- Login  UI -->
+
+    <string name="email_address">Email Address</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="not_member">Not a member? Sign Up</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <string name="login_logo_desc">bento logo</string>
+
+    <!-- Forgot pass -->
+
+    <string name="type_email">Type your email address</string>
+    <string name="enter_6_digit_code">Enter the 6-digit code sent to your email</string>
+    <string name="enter_new_pass">Enter new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+
+
+    <!-- SignUp  UI -->
+
+    <string name="signInButton">signInButton</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
+    <string name="firstname">First Name</string>
+    <string name="middlename">Middle Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="small_gender">gender</string>
+
+    <string name="mmddyyyy">MM/DD/YYYY</string>
+    <string name="mmyyy">MM/YYYY</string>
+    <string name="mmyy">MM/YY</string>-->
+    <string name="mobile">Mobile #</string>
+
+    <string name="plan_selected">Plan Selected</string>
+    <string name="out_of_pocket_pay_method">Out-of-Pocket Payment Method</string>
+
+    <string name="payment_type">Payment Type</string>
+
+    <string name="payment_method">Payment Method</string>
+    <string name="plan_and_payment">Plan &amp; Payment</string>
+    <string name="payment_and_plan">Payment &amp; Plan</string>
+    <string name="fee_payment">Fee Payment Method</string>
+    <string name="select_gender">Select</string>
+
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_account">Account #</string>
+    <string name="bank_routing">Routing #</string>
+    <string name="credit_card">Credit Card #</string>
+    <string name="hsa_card">HSA Card #</string>
+    <string name="out_of_pocket_payment">Out-of-Pocket Payment Credit Card #</string>
+    <string name="fee_payment_card">Fee payment Credit Card #</string>
+    <string name="cardholder_name">Cardholder Name</string>
+    <string name="digit_code">3- or 4- digit code</string>
+    <string name="hsa_code">3- digit code</string>
+    <string name="expiry_date">Expiration Date - MM/YY</string>
+
+
+    <string name="social_security">Social Security #</string>
+
+    <string name="employer_id">Employer ID</string>
+
+    <string name="primary_member_cambalt_id">Primary Member Bento ID</string>
+
+    <string name="add_family">+ Add Family Member</string>
+
+    <!-- Select Payment UI -->
+    <string name="planSelected">Plan Selected</string>
+
+
+    <!-- Add ManageFamilyActivity Details UI -->
+
+    <string name="addFamily_description">If you are using an Employer ID, you can only add family members during this enrollment period or at qualifying events. If you need to make changes after signup, please contact your Bento administrator.</string>
+    <string name="relationship">Relationship</string>
+
+    <!-- Fragment Title -->
+
+    <string name="signup">Sign Up</string>
+    <string name="add_details">Add Details</string>
+    <string name="select_payment">Select Payment</string>
+    <string name="addfamily">Add Family</string>
+    <string name="add_family_member">Add Family Member</string>
+    <string name="view_family_member">View Family Member</string>
+    <string name="manage_family">Manage Family</string>
+
+    <!-- Dentists Profile -->
+
+    <string name="dn_ph_number">(XXX)-XXX-XXXX</string>
+    <string name="dn_platinum_pln">Platinum</string>
+    <string name="dn_gold_pln">Gold</string>
+    <string name="dn_silver_pln">Silver</string>
+
+    <!-- Your Account Activity -->
+
+    <string name="ac_nxt_btn_title">Sign Out</string>
+    <string name="ac_title">Your Account</string>
+    <string name="ac_head_payment">PAYMENT</string>
+    <string name="ac_head_benefit">BENEFITS</string>
+    <string name="ac_head_your_family">YOUR FAMILY</string>
+    <string name="ac_head_your_account">YOUR BENTO ACCOUNT</string>
+
+    <string name="ac_benefit_expl">Explanation of Benefits</string>
+    <string name="ac_elig_cobra">You are eligible for COBRA</string>
+    <string name="ac_elected_cobra">You have elected COBRA</string>
+
+    <string name="ac_mang_family">Manage Family</string>
+    <string name="ac_chng_details">Change Personal Details</string>
+    <string name="ac_chng_email">Change Email Address</string>
+    <string name="ac_chng_pass">Change Password</string>
+    <string name="ac_chng_mob">Change Mobile #</string>
+    <string name="ac_chng_address">Change Address</string>
+    <string name="ac_touch_id">Use Touch ID or Face ID to Sign In</string>
+
+    <!-- Manage COBRA -->
+
+    <string name="c_nxt_btn_title">Edit</string>
+    <string name="c_title">Manage COBRA</string>
+    <string name="c_cost">COBRA COST</string>
+    <string name="c_cost_desc">To continue your Employer Plan, this amount will be paid with your Payment Method below. You have 60 days to elect COBRA Status.</string>
+    <string name="elected_cobra_msg">To continue your Employer Plan, this amount will be paid with your Payment Method below.</string>
+    <string name="c_hd_pay_mthd">COBRA PAYMENT METHOD</string>
+    <string name="c_pay_mthd">Payment Method</string>
+    <string name="c_hd_el_opt">ELECTION OPTIONS</string>
+    <string name="c_el_elect">Elect COBRA Coverage</string>
+    <string name="c_el_decline">Decline COBRA Coverage</string>
+    <string name="c_el_cancel">Cancel COBRA Coverage</string>
+    <string name="c_decline_desc">You can Elect COBRA during the election period or you can add a new Employer ID or change to Self Pay to continue your Bento coverage.</string>
+    <string name="c_cancel_desc">Cancelling COBRA will put your Bento account into an inactive state. You can add a new Employer ID or change to Self Pay to continue your Bento coverage.</string>
+
+    <string name="verify_bank_account">Verify Bank Account</string>
+    <!-- Notification Activity -->
+
+    <string name="n_title">Notifications</string>
+
+    <!-- Appointments Activity -->
+
+    <string name="a_title">Appointments</string>
+
+
+    <!-- DROP DOWN VALUES -->
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </string-array>
+
+    <string-array name="paymentType_array">
+        <item>Employer Pay</item>
+        <item>Family Pay</item>
+        <item>Self Pay</item>
+        <item>None (Inactive)</item>
+
+
+    </string-array>
+
+    <string-array name="paymentMethod_array">
+        <item>Credit Card</item>
+        <!--<item>HSA</item>-->
+    </string-array>
+
+    <string-array name="pocketPaymentMethod_array">
+        <item>None</item>
+        <item>Credit Card</item>
+        <!--<item>HSA</item>-->
+    </string-array>
+
+    <string-array name="feePaymentMethod_array">
+        <item>VISA</item>
+        <item>BANK</item>
+    </string-array>
+
+    <string-array name="relationshipName_array">
+        <item>Spouse</item>
+        <item>Dependant</item>
+    </string-array>
+
+    <string-array name="plans_array">
+        <item>Platinum Plus</item>
+        <item>Platinum Standard</item>
+        <item>Platinum Essentials</item>
+        <item>Gold Plus</item>
+        <item>Gold Standard</item>
+        <item>Gold Essentials</item>
+        <item>Silver Plus</item>
+        <item>Silver Standard</item>
+        <item>Silver Essentials</item>
+    </string-array>
+
+    <string-array name="states_name">
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+
+    <string-array name="search_distance">
+        <item>Max</item>
+        <item>25 miles</item>
+        <item>10 miles</item>
+        <item>5 miles</item>
+        <item>1 mile</item>
+    </string-array>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_calendar">Add to Calendar</string>
+    <string name="how_would_you_rate_the_service">How would you rate the service?</string>
+    <string name="how_would_you_rate_this_office">How would you rate this office?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="remove">Remove</string>
+    <string name="confirm_signout">Sign Out</string>
+    <string name="were_these_services_performed">Were these services performed?</string>
+    <string name="total_cost">Total cost:</string>
+    <string name="plan_pays">Plan pays:</string>
+    <string name="you_pay">You pay:</string>
+    <string name="find_a_dentist">Find a Dentist</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="new_emailid">Email Address</string>
+    <string name="new_phone">Phone Number</string>
+    <string name="new_address">Address</string>
+    <string name="no_internet">No internet connection. Please check the internet connection</string>
+
+    <!-- Web-services error messages -->
+    <string name="login_failed">Login failed</string>
+    <string name="event_name">Event Name :</string>
+
+    <!-- Change information activity -->
+    <string name="window_type">windowType</string>
+    <string name="change_details">Change Details</string>;
+    <string name="change_mobile">Change Mobile</string>;
+    <string name="change_address">Change Address</string>;
+    <string name="change_email">Change Email</string>;
+    <string name="change_password">Change Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="logout_message">Are you sure you want to sign out?</string>
+    <string name="token">Token</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="logout_failed">Error code - 400, Logout Failed. Please try later</string>
+    <string name="no_data_response">No data in response</string>
+    <string name="auto_login">Auto Login…</string>
+    <string name="authenticating">Authenticating…</string>
+    <string name="enter_valid_email">Enter a valid email address</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_new_password">Please enter new password</string>
+    <string name="enter_new_confirm_password">Please enter new confirm password</string>
+    <string name="members">Members</string>
+    <string name="member">Member</string>
+    <string name="user_data">userData</string>
+    <string name="self_pay">Self Pay</string>
+    <string name="employer">Employer</string>
+    <string name="enter_first_name">Please enter first name</string>
+    <string name="enter_last_name">Please enter last name</string>
+    <string name="choose_gender">Please choose gender</string>
+    <string name="date_format">MM/DD/YYYY</string>
+    <string name="enter_dob">Please enter date of birth</string>
+    <string name="age_should_not_eighteen">Age should not be less than 18 years</string>
+    <string name="enter_mobile">Please enter mobile number</string>
+    <string name="enter_social_security">Please enter social security</string>
+    <string name="max_social_security_code">SSN length should be 9 characters</string>
+    <!--<string name="first_name">first_name</string>-->
+    <!--<string name="middle_name">middle_name</string>-->
+    <!--<string name="last_name">last_name</string>-->
+    <string name="date_of_birth">date_of_birth</string>
+    <string name="_dob">dob</string>
+
+    <string name="phone_num">phone_number</string>
+    <string name="ssn">ssn</string>
+    <string name="email">email</string>
+    <string name="small_password">password</string>
+    <string name="small_new_pass">new_password</string>
+    <string name="enter_confirm_password">Please enter confirm password</string>
+    <string name="password_mismatch">Passwords mismatch</string>
+    <string name="password_must_six_length">Password length should be at least 6 characters</string>
+    <string name="screen">screen</string>
+    <string name="from_login">fromLogin</string>
+    <string name="thank_joining">Thank you for joining Bento!</string>
+    <string name="payment_pending">You must provide Payment details to confirm your registration and continue to Login.</string>
+    <string name="welcome">Welcome</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="skip">Skip</string>
+    <string name="profile_color">#BAB399</string>
+    <string name="registration_failed">Registration Failed</string>
+    <string name="signingup">Signing Up</string>
+    <string name="enabled_hsa">enabledHSA</string>
+    <string name="username">username</string>
+    <string name="_forgot_password">Forgot Password</string>
+    <string name="send">Send</string>
+    <string name="enter_email">Type your Email</string>
+    <string name="estimates">ESTIMATES</string>
+    <string name="upcoming_appoinments">UPCOMING APPOINTMENTS</string>
+    <string name="completed_appointments">COMPLETED APPOINTMENTS</string>
+    <string name="estimate">Estimate</string>
+    <string name="type">type</string>
+    <string name="user">user</string>
+    <string name="wait_fetching_data">Please wait… Loading data</string>
+    <!--<string name="upcoming_appoint">Upcoming Appointment</string>-->
+    <string name="scheduled_appoint">Scheduled Appointment</string>
+    <string name="past_appoint">Past Appointment</string>
+    <string name="call_office">Call to Reschedule</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="cancel_appoint">Cancel Appointment</string>
+    <string name="canceled_appoint">Canceled Appointment</string>
+    <string name="appoint_has_been_cancel">Appointment Canceled</string>
+    <string name="estimate_accepted">Estimation Accepted</string>
+    <string name="estimate_declined">Estimation Declined</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="reset_pass_was_sent">Reset password was sent to your registered email</string>
+    <string name="reset_pass_successful">Password has been reset successfully</string>
+    <string name="reset_pass_successful_loging">Password has been reset successfully. Please wait doing login with new password</string>
+    <string name="please_type_email">Please type your email</string>
+    <string name="please_enter_six_digit_code">Please enter the 6-digit code that sent to you register email</string>
+    <string name="please_select_payment">Please select payment type</string>
+    <string name="please_select_plan">Please select plan</string>
+    <string name="please_select_payment_method">Please select payment method</string>
+    <string name="please_select_fee_payment">Please select fee payment method</string>
+    <string name="please_enter_employeeid">Please enter employer ID</string>
+    <string name="update_user_details">Update User Details</string>
+    <string name="updated_successfully">Updated successfully</string>
+    <string name="your_cambalt_member_id">YOUR BENTO MEMBER ID</string>
+    <string name="relation">relation</string>
+    <string name="update">update</string>
+    <string name="cobra_data">cobraData</string>
+    <string name="appointments">Appointments</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="no_scheduled_history">No scheduled appointment history. Your scheduled appointments will be listed here.</string>
+    <string name="no_estimates_history">No estimates history. Your estimates will be listed here.</string>
+    <string name="no_past_history">No past appointment history. Your past appointments will be listed here.</string>
+    <string name="corporate">corporate</string>
+    <string name="personal">personal</string>
+    <string name="paymenttype">paymentType</string>
+    <string name="selectedplan">selectedPlan</string>
+    <string name="call_to_schedule_an_appointment">Call to Schedule an Appointment</string>
+    <string name="plans_accepted">Plans Accepted</string>
+    <string name="dentist">Dentists</string>
+    <string name="view_dentist">View Dentist</string>
+    <string name="plan">plan</string>
+    <string name="plan_type">plan_type</string>
+    <string name="practice">practice</string>
+    <string name="general_dentist">General Dentist</string>
+    <string name="touch_id_cambalt">Touch ID for \"Bento\"</string>
+    <string name="touch_to_sign">Touch to Sign in</string>
+
+    <!-- Location -->
+
+    <string name="location_not_found_title">Locations disabled</string>
+    <string name="location_not_found_message">Google requires location services for accessing map. Would you like to enable it?</string>
+
+    <!-- Fingerprint auth -->
+
+    <string name="try_again">Try again</string>
+    <string name="device_doesnt_support_finger_auth">Your device doesn\'t support fingerprint authentication</string>
+    <string name="please_enable_finger_permission">Please enable the fingerprint permission</string>
+    <string name="no_finger_configured">No fingerprint configured. Please register at least one fingerprint in your device\'s Settings</string>
+    <string name="please_enable_lockscreen_security">Please enable lockscreen security in your device\'s Settings</string>
+    <string name="resend_verification">Resend Verification</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="verification_email_sent">Verification Email Sent</string>
+    <string name="verification_email">Verification Email</string>
+    <string name="we_sent_verificaiton_email">We sent a verification email to</string>
+    <string name="we_sent_email_to">We have sent you a verification email to</string>
+    <string name="check_your_email_verification_link">Please click on the verification link in the email in order to proceed with Sign Up.</string>
+    <string name="fee_payment_method_will_be_used_to_pay_cambalt_transaction_fees_and_pay_for_any_costs_that_your_fsa_or_hsa_account_can_not_cover">Fee Payment Method will be used to pay Bento transaction fees and pay for any costs that your FSA or HSA account can not cover.</string>
+    <string name="you_can_optionally_select_an_out_of_pocket_payment_method_to_pay_for_services_not_covered_by_your_plan">You can optionally select an Out-of-Pocket Payment Method to pay for services not covered by your plan.</string>
+    <string name="paid">PAID</string>
+    <string name="cobra_cost">COBRA COST</string>
+    <string name="bank">Bank Account</string>
+    <string name="cobra_payment">Cobra Payment</string>
+    <string name="two_transaction_amounts_were_posted_to_your_bank_account_please_enter_those_verification_amounts_here_to_verify_your_bank_account_you_will_not_be_active_until_you_do_so_if_you_are_using_cobra_you_have_to_verify_before_the_election_period_is_over">Two transaction amounts were posted to your bank account. Please enter those verification amounts here to verify your Bank account. You will not be active until you do so. If you are using COBRA, you have to verify before the election period is over.</string>
+    <string name="bank_verification">BANK VERIFICATION</string>
+    <string name="enter_transaction_amount_1">Enter Transaction Amount #1</string>
+    <string name="enter_transaction_amount_2">Enter Transaction Amount #2</string>
+    <string name="i_would_like_to_use_this_dentist">I would like to use this Dentist</string>
+    <string name="scheduled_appointment">SCHEDULED APPOINTMENTS</string>
+    <string name="past_appointments">PAST APPOINTMENTS</string>
+    <string name="reached_max_num_spouse">You are already reached to maximum family member for Spouse</string>
+    <string name="reached_max_dependent">You are already reached to maximum family member for Dependent</string>
+    <string name="device_doesnt_support_finger_authentication">Your device doesn\'t support fingerprint authentication</string>
+    <string name="date_or_time_not_formatted">Date or Time is not in correct format</string>
+    <string name="can_not_cancel_within_24_hrs">Since it is within 24 hours of the appointment, you cannot cancel this appointment from the app. Please call to reschedule.</string>
+    <string name="phoneicon">phoneIcon</string>
+    <string name="fabbutton">fabButton</string>
+    <string name="webicon">webIcon</string>
+    <string name="not_in_network">Not Currently in Network</string>
+    <string name="locationicon">locationIcon</string>
+    <string name="search_by_name_zip_code">Search by Name or Zip Code</string>
+    <string name="you_can_manage_your_family_members_here">You can manage your family members here. Tap Add to add a family member.</string>
+    <string name="search_in_this_area">Search in this area</string>
+    <string name="bento_member_id">Bento Member ID</string>
+    <string name="out_of_pocket">Out-of-pocket</string>
+
+
+    <string name="autolink_test">Address: 620 Eighth Avenue New York, NY 10018</string>
+    <string name="ortho_benefit">Ortho Benefit</string>
+    <string name="reset_date">Plan Benefits (reset on 1/1/</string>
+    <string name="version">Version -</string>
+    <string name="desc_calendar">calendar</string>
+    <string name="session_expired">Session has Expired</string>
+    <string name="session_expired_signin_to_continue">Your Bento session has expired. To continue, sign in with your Bento ID and password.</string>
+    <string name="error_500">Error 500</string>
+    <string name="sorry_not_registered_with_bento">Sorry You\'re not registered user with Bento. Please go for user registration.</string>
+    <string name="menu_icon">menu_icon</string>
+    <string name="notification_icon">notification_icon</string>
+    <string name="additional_amounts">ADDITIONAL BENEFITS</string>
+    <string name="view_explaination_of_benefits">View Explanation of Benefits</string>
+    <string name="your_account_will_be_set_to_inactive">Your account will be set to Inactive. In order to receive services, you will need to first add a Payment Type from the Account screen.</string>
+    <string name="your_account">Your Account</string>
+    <string name="signing_in">Signing In</string>
+    <string name="default_pass">123456</string>
+    <string name="at_least_one_network_selected">At least one network should be selected</string>
+    <string name="entered_zip_is_invalid">Entered zip code is not valid. Zip code length must be equal to 5 digits</string>
+    <string name="dentist_paractice_name">Dentist or Practice Name</string>
+    <string name="at_least_once_speciality_selected">At least one speciality should be selected</string>
+    <string name="select">Select</string>
+    <string name="manage_family_members_for_this_plan">Manage Family Members for this Plan</string>
+    <string name="emailid_already_registered_with_bento">An account with this email address already exists. Please log in.</string>
+    <string name="user_not_registered_with_bento">user not registered with bento, please signup</string>
+    <string name="verification_pending">verification pending</string>
+    <string name="incorrect_access_to_account">You do not have access to the link that you clicked. Please sign into the correct account and try again.</string>
+    <string name="incorrect_account">Incorrect Account</string>
+    <string name="do_not_have_permission_to_this_account_to_view_appointment">You do not have access to the link that you clicked. Please sign into the correct account and try again.</string>
+    <string name="title_activity___dashboard">_DashboardActivity</string>
+    <string name="session_id_br12340978">Session ID : BR12340978</string>
+
+</resources>

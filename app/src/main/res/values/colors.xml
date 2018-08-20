@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="lightGray">#D3D3D3</color>
+
+    <!--<color name="coolNavy">#042C3E</color>-->
+    <!--<color name="coolBlue">#407C9E</color>-->
+    <!--<color name="coolGreen">#5AC1A1</color>-->
+
+    <color name="coolNavy">#1D282E</color>
+    <color name="coolBlue">#1593C1</color>
+    <color name="coolBlueDark">#047097</color>
+    <color name="coolGreen">#5BA78E</color>
+
+    <color name="colorRipple">#91defa</color>
+
+    <color name="coolGrey">#EBF6F7</color>
+
+    <color name="profile">#d8ffff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="dateFormat">#a8a8a8</color>
+
+    <!--Your account -->
+    <color name="heading">#F7F7F7</color>
+
+    <!-- COBRA Manage -->
+    <color name="descr_gray">#706d6d</color>
+
+    <!-- Notifications -->
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+
+    <color name="light_green">#00b100</color>
+    <color name="text_hint">#a8a8a8</color>
+    <color name="red">#ff0000</color>
+
+    <color name="red_deep">#cc0000</color>
+
+    <color name="blue">#3987ec</color>
+
+    <color name="profile_color">#BAB399</color>
+
+    <color name="radio_color">#1593C1</color>
+    <color name="radio_tap_color">#40007aff</color>
+    <color name="radio_white_color">#ffffff</color>
+
+    <color name="black_overlay">#fa818080</color>
+
+    <color name="pink">#FF1493</color>
+
+    <color name="orange">#f1f5291b</color>
+
+</resources>
