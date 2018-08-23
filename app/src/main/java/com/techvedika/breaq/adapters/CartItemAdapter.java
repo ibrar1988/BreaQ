@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -31,17 +32,26 @@ public class CartItemAdapter extends RecyclerView.Adapter<CartItemAdapter.MyView
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView tvItemName, tvItemCharacterist, tvItemDescription, tvRmoveItem,tvItemPrice;
+        private ImageView imgItemImage;
+        private TextView tvProductPrice, tvProductName, tvUpdateItem, tvRemoveItem, tvMaterialType,tvMaterialColor
+                ,tvDescreaseItem, tvItemCount, tvIncreaseItem, tvTotalItemPrice,tvChargesMessage;
 
         private LinearLayout parentLayout;
 
         private MyViewHolder(View view) {
             super(view);
-            tvItemName = (TextView) view.findViewById(R.id.tvItemName);
-            tvItemCharacterist = (TextView) view.findViewById(R.id.tvItemCharacterist);
-            tvItemDescription = (TextView) view.findViewById(R.id.tvItemDescription);
-            tvRmoveItem = (TextView) view.findViewById(R.id.tvRmoveItem);
-            tvItemPrice = (TextView) view.findViewById(R.id.tvItemPrice);
+            imgItemImage = (ImageView) view.findViewById(R.id.imgItemImage);
+            tvProductPrice = (TextView) view.findViewById(R.id.tvProductPrice);
+            tvProductName = (TextView) view.findViewById(R.id.tvProductName);
+            tvUpdateItem = (TextView) view.findViewById(R.id.tvUpdateItem);
+            tvRemoveItem = (TextView) view.findViewById(R.id.tvRemoveItem);
+            tvMaterialType = (TextView) view.findViewById(R.id.tvMaterialType);
+            tvMaterialColor = (TextView) view.findViewById(R.id.tvMaterialColor);
+            tvDescreaseItem = (TextView) view.findViewById(R.id.tvDescreaseItem);
+            tvItemCount = (TextView) view.findViewById(R.id.tvItemCount);
+            tvIncreaseItem = (TextView) view.findViewById(R.id.tvIncreaseItem);
+            tvTotalItemPrice = (TextView) view.findViewById(R.id.tvTotalItemPrice);
+            tvChargesMessage = (TextView) view.findViewById(R.id.tvChargesMessage);
             parentLayout = (LinearLayout) view.findViewById(R.id.parentLayout);
         }
     }
@@ -59,16 +69,12 @@ public class CartItemAdapter extends RecyclerView.Adapter<CartItemAdapter.MyView
     @Override
     public void onBindViewHolder(CartItemAdapter.MyViewHolder holder, int position) {
         data = mCartItemList.get(position);
-        holder.tvItemName.setText("MacAirBook");
-        holder.tvItemCharacterist.setText("15 inch - Product -67J8H");
-        holder.tvItemDescription.setText("Item description");
-        holder.tvItemPrice.setText("79,000.00");
-        holder.tvRmoveItem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mListener.onItemClick(data);
-            }
-        });
+        holder.tvProductPrice.setText(data.getProductPrice());
+        holder.tvProductName.setText(data.getProductName());
+        holder.tvMaterialType.setText(data.getMaterialType());
+        holder.tvMaterialColor.setText(data.getMaterialColor());
+        holder.tvItemCount.setText(data.getMaterialCount());
+        holder.tvTotalItemPrice.setText(data.getTotalItemPrice());
     }
 
     @Override
@@ -77,7 +83,9 @@ public class CartItemAdapter extends RecyclerView.Adapter<CartItemAdapter.MyView
     }
 
     public interface OnItemClickListener {
-
-        void onItemClick(ScanData item);
+        void onUpdateItem(ScanData item);
+        void onRemoveItem(ScanData item);
+        void onIncreaseItem();
+        void onDecreaseItem();
     }
 }

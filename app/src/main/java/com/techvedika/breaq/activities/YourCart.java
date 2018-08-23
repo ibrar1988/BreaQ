@@ -12,6 +12,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -26,7 +27,7 @@ import java.util.List;
 
 import info.androidhive.barcode.BarcodeReader;
 
-public class DashBoardActivity extends AppCompatActivity implements View.OnClickListener, BarcodeReader.BarcodeReaderListener{
+public class YourCart extends AppCompatActivity implements View.OnClickListener, BarcodeReader.BarcodeReaderListener{
 
     private static final int SCAN_SCREEN_RESULT = 200;
     private Context mContext;
@@ -37,12 +38,13 @@ public class DashBoardActivity extends AppCompatActivity implements View.OnClick
     private LinearLayout emptyCartLayout;
     private RecyclerView cartRecyclerView;
     private TextView session_id;
-    private ImageButton btnAddItem;
+    private Button btnCheckout, btnContinueShopping;
+    private TextView tvCurrentSubTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dash_board);
+        setContentView(R.layout.activity_your_cart);
         this.mContext = this;
         init();
     }
@@ -50,17 +52,19 @@ public class DashBoardActivity extends AppCompatActivity implements View.OnClick
     private void init(){
         emptyCartLayout = (LinearLayout)findViewById(R.id.emptyCartLayout);
         cartRecyclerView = (RecyclerView)findViewById(R.id.cartRecyclerView);
-        session_id = (TextView) findViewById(R.id.session_id);
-        btnAddItem = (ImageButton) findViewById(R.id.btnAddItem);
-        btnAddItem.setOnClickListener(this);
+        btnCheckout = (Button)findViewById(R.id.btnCheckout);
+        btnCheckout.setOnClickListener(this);
+        btnContinueShopping = (Button)findViewById(R.id.btnContinueShopping);
+        btnContinueShopping.setOnClickListener(this);
         initRecyclerView();
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnAddItem:
-                scanItem();
+            case R.id.btnCheckout:
+                break;
+            case R.id.btnContinueShopping:
                 break;
             default:
                 break;

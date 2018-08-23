@@ -2,6 +2,7 @@ package com.techvedika.breaq.extras;
 
 import android.content.Context;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -21,6 +22,10 @@ public class Utilities {
     }
 
     public static boolean has (JSONObject obj) {
+        return obj != null;
+    }
+
+    public static boolean has (JSONArray obj) {
         return obj != null;
     }
 

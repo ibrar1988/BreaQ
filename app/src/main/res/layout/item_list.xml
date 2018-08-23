@@ -4,106 +4,261 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <!--<TextView-->
-    <!--android:id="@+id/itemName"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:padding="5dp"-->
-    <!--android:textColor="@color/coolBlue"-->
-    <!--android:text="MacAirBook"/>-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/itemCharacterist"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:padding="5dp"-->
-    <!--android:textColor="@color/descr_gray"-->
-    <!--android:text="15 inch - Product -67J8H"/>-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/itemDescription"-->
-    <!--android:visibility="gone"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:padding="5dp"-->
-    <!--android:textColor="@color/coolNavy"-->
-    <!--android:text="Item description"/>-->
-
-    <!--<TextView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:padding="5dp"-->
-    <!--android:textColor="@color/red_deep"-->
-    <!--android:text="Remove Item"/>-->
-
-    <!--<View-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="0.5dp"-->
-    <!--android:background="@color/dateFormat" />-->
     <LinearLayout
-        android:id="@+id/parentLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="10dp"
-        android:paddingBottom="5dp"
-        android:paddingTop="10dp"
-        android:orientation="horizontal">
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imgItemImage"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:src="@drawable/no_image_available"/>
 
         <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="4"
             android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rs 240.00"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kali 0076"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvUpdateItem"
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center"
+                android:background="@color/black"
+                android:text="Update"
+                android:textColor="#FFF2F0F0"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tvRemoveItem"
+                android:layout_weight="1"
+                android:layout_width="70dp"
+                android:layout_height="22dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center"
+                android:background="@color/black"
+                android:text="Remove"
+                android:textColor="#FFF2F0F0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:textColor="@color/coolBlue"
-                android:text="MacAirBook"/>
+                android:text="Material"
+                android:textColor="@color/black"/>
 
             <TextView
-                android:id="@+id/tvItemCharacterist"
+                android:id="@+id/tvMaterialType"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:padding="5dp"
-                android:textColor="@color/descr_gray"
-                android:text="15 inch - Product -67J8H"/>
-
-            <TextView
-                android:id="@+id/tvItemDescription"
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp"
-                android:textColor="@color/coolNavy"
-                android:text="Item description"/>
-
-            <TextView
-                android:id="@+id/tvRmoveItem"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp"
-                android:textColor="@color/red_deep"
-                android:text="Remove Item"/>
+                android:background="@drawable/bg_item_description"
+                android:text="Georgett"/>
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvItemPrice"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="79,000.00"
-            android:textColor="@color/coolNavy"/>
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvMaterialColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_item_description"
+                android:text="White"/>
+
+        </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pieces"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvDescreaseItem"
+                    android:layout_width="55dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/black"
+                    android:text="-"/>
+
+                <TextView
+                    android:id="@+id/tvItemCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="2.00"/>
+
+                <TextView
+                    android:id="@+id/tvIncreaseItem"
+                    android:layout_width="55dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/black"
+                    android:text="+"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvTotalItemPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:text="480.00"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvChargesMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Dyeing charges Rs. 0.00 per piece."/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginStart="5dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dateFormat" />
 
 </LinearLayout>

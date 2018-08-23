@@ -6,11 +6,24 @@ package com.techvedika.breaq.constant;
 
 public class Constants {
 
-    private static final String URL = "http://192.168.0.129:8089/bq_user/";
-    public static final String kLogin_url = URL+"user/signIn";
-    public static final String kSignup_url = URL+"user/signUp";
-    public static final String kGet_franchise_url = URL+"user/getFranchiseTypes";
-    public static final String kGet_Franchise_details_url = "URL+user/getFranchises";
+    //http://192.168.0.104:8089/bq_user
+    //http://192.168.0.104:8090/bq_franchise
+
+    private static final String URL = "http://192.168.0.104:8089/";
+
+    private static final String URL_TWO = "http://192.168.0.104:8090/";
+
+
+    public static final String kLogin_url = URL+"bq_user/user/signIn";
+    public static final String kSignup_url = URL+"bq_user/user/signUp";
+    public static final String kGet_franchise_type_url = URL+"bq_user/user/getFranchiseTypes";
+    public static final String kGet_Franchise_url = URL+"bq_user/user/getFranchises";
+
+    public static final String kAdd_Product_url = URL_TWO+"bq_franchise/franchise/addProduct";
+
+
+    public static final String kSession_Creation_url = URL_TWO+"bq_franchise/franchise/createSession";
+
     public static final String kLogout_Url = "";
     public static final String kUpdateMessagingToken_Url="";
 

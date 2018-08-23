@@ -32,6 +32,7 @@ import com.techvedika.breaq.R;
 import com.techvedika.breaq.constant.Constants;
 import com.techvedika.breaq.extras.Common;
 import com.techvedika.breaq.extras.CustomAlertDialog;
+import com.techvedika.breaq.extras.LocalStorage;
 import com.techvedika.breaq.extras.Log;
 import com.techvedika.breaq.extras.Utilities;
 import com.techvedika.breaq.interfaces.DialogClickInterface;
@@ -207,9 +208,17 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener,
 
                                     BreaQApplication.mInstance.showToast(response.getString(Constants.kStatusMessage));
 
-                                    startActivity(new Intent(mContext, DashBoardActivity.class));
+                                    if(response.has("user_id")) {
 
-                                    finish();
+                                        LocalStorage.saveStringPreference(mContext,"user_id",response.getString("user_id"));
+
+                                        startActivity(new Intent(mContext, FranchiseActivity.class));
+
+                                        finish();
+
+                                    } else {
+                                        CustomAlertDialog.getInstance().showCustomDialog(mContext, "Login Failed", "Sorry Couldn't received User ID on Login", "OK", null,0);
+                                    }
 
                                 } else {
 
