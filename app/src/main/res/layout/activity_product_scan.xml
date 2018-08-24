@@ -34,6 +34,18 @@
                     android:textStyle="bold"
                     android:text="BreaQ"/>
 
+                <TextView
+                    android:id="@+id/cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="Cart"/>
+
             </RelativeLayout>
 
         </android.support.v7.widget.Toolbar>

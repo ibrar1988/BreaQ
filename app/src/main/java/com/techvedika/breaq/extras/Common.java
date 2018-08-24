@@ -199,4 +199,8 @@ public class Common {
         }
 
     }
+
+    public static String formatCurrency (double value) {
+        return String.format("%.2f", value);
+    }
 }

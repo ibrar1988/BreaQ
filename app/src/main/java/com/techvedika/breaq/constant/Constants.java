@@ -21,7 +21,7 @@ public class Constants {
 
     public static final String kAdd_Product_url = URL_TWO+"bq_franchise/franchise/addProduct";
 
-
+    public static final String kGet_Cart_Product_url = URL_TWO+"bq_franchise/franchise/getSessionBagsInfo";
     public static final String kSession_Creation_url = URL_TWO+"bq_franchise/franchise/createSession";
 
     public static final String kLogout_Url = "";

@@ -1,7 +1,6 @@
 package com.techvedika.breaq.models;
 
 import com.google.gson.Gson;
-import com.google.gson.internal.Streams;
 
 /**
  * Created by Ibrar on 8/20/2018.
@@ -9,9 +8,23 @@ import com.google.gson.internal.Streams;
 
 public class ScanData {
 
-    String productPrice;
+    double productPrice;
     String productName;
     String materialType;
+    String materialColor;
+    double totalItemPrice;
+    String chargesMessage;
+    int materialCount;
+
+    public ScanData(double productPrice, String productName, String materialType, String materialColor, double totalItemPrice, String chargesMessage, int materialCount) {
+        this.productPrice = productPrice;
+        this.productName = productName;
+        this.materialType = materialType;
+        this.materialColor = materialColor;
+        this.totalItemPrice = totalItemPrice;
+        this.chargesMessage = chargesMessage;
+        this.materialCount = materialCount;
+    }
 
     public int getMaterialCount() {
         return materialCount;
@@ -21,13 +34,11 @@ public class ScanData {
         this.materialCount = materialCount;
     }
 
-    int materialCount;
-
-    public String getProductPrice() {
+    public double getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(String productPrice) {
+    public void setProductPrice(double productPrice) {
         this.productPrice = productPrice;
     }
 
@@ -55,11 +66,11 @@ public class ScanData {
         this.materialColor = materialColor;
     }
 
-    public String getTotalItemPrice() {
+    public double getTotalItemPrice() {
         return totalItemPrice;
     }
 
-    public void setTotalItemPrice(String totalItemPrice) {
+    public void setTotalItemPrice(double totalItemPrice) {
         this.totalItemPrice = totalItemPrice;
     }
 
@@ -70,10 +81,6 @@ public class ScanData {
     public void setChargesMessage(String chargesMessage) {
         this.chargesMessage = chargesMessage;
     }
-
-    String materialColor;
-    String totalItemPrice;
-    String chargesMessage;
 
     public static ScanData fromJson(String s) {
         return new Gson().fromJson(s, ScanData.class);

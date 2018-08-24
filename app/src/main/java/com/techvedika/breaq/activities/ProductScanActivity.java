@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public class ProductScanActivity extends AppCompatActivity {
 
     private Context mContext;
-    private TextView tvSession_id;
+    private TextView tvSession_id,cart;
     private LinearLayout scannerLayout;
     public static ProductScanActivity mProductScanActivity;
     JSONObject response = null;
@@ -45,7 +45,7 @@ public class ProductScanActivity extends AppCompatActivity {
 
         tvSession_id = (TextView)findViewById(R.id.tvSession_id);
 
-        String res = LocalStorage.getStringPreference(mContext,"sessionData", response.toString());
+        String res = LocalStorage.getStringPreference(mContext,"sessionData", "");
 
         try {
 
@@ -66,6 +66,18 @@ public class ProductScanActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 scanItem();
+            }
+        });
+
+        cart = (TextView)findViewById(R.id.cart);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, YourCart.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                intent.putExtra("isFrom",ProductScanActivity.class.getSimpleName());
+                startActivity(intent);
+                finish();
             }
         });
     }

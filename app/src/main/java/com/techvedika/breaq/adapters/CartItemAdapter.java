@@ -64,17 +64,14 @@ public class CartItemAdapter extends RecyclerView.Adapter<CartItemAdapter.MyView
         return new CartItemAdapter.MyViewHolder(itemView);
     }
 
-    private ScanData data;
-
     @Override
     public void onBindViewHolder(CartItemAdapter.MyViewHolder holder, int position) {
-        data = mCartItemList.get(position);
-        holder.tvProductPrice.setText(data.getProductPrice());
-        holder.tvProductName.setText(data.getProductName());
-        holder.tvMaterialType.setText(data.getMaterialType());
-        holder.tvMaterialColor.setText(data.getMaterialColor());
-        holder.tvItemCount.setText(data.getMaterialCount());
-        holder.tvTotalItemPrice.setText(data.getTotalItemPrice());
+        holder.tvProductPrice.setText(String.valueOf(mCartItemList.get(position).getProductPrice()));
+        holder.tvProductName.setText(mCartItemList.get(position).getProductName());
+        holder.tvMaterialType.setText(mCartItemList.get(position).getMaterialType());
+        holder.tvMaterialColor.setText(mCartItemList.get(position).getMaterialColor());
+        holder.tvItemCount.setText(String.valueOf(mCartItemList.get(position).getMaterialCount()));
+        holder.tvTotalItemPrice.setText(String.valueOf(mCartItemList.get(position).getTotalItemPrice()));
     }
 
     @Override

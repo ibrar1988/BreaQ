@@ -13,18 +13,22 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.android.gms.vision.barcode.Barcode;
+import com.google.gson.Gson;
 import com.techvedika.breaq.R;
 import com.techvedika.breaq.constant.Constants;
 import com.techvedika.breaq.extras.Common;
 import com.techvedika.breaq.extras.CustomAlertDialog;
 import com.techvedika.breaq.extras.LocalStorage;
 import com.techvedika.breaq.extras.Log;
+import com.techvedika.breaq.extras.TinyDB;
 import com.techvedika.breaq.extras.Utilities;
 import com.techvedika.breaq.models.ScanData;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import info.androidhive.barcode.BarcodeReader;
@@ -58,6 +62,8 @@ public class QRScanActivity extends AppCompatActivity implements BarcodeReader.B
             }
         }
     }
+
+    boolean flag = false;
 
     @Override
     public void onScanned(Barcode barcode) {
@@ -116,7 +122,7 @@ public class QRScanActivity extends AppCompatActivity implements BarcodeReader.B
         Toast.makeText(getApplicationContext(), "Error occurred while scanning " + s, Toast.LENGTH_SHORT).show();
     }
 
-    private void addProductToCart(String itemName, JSONObject reqObj){
+    private void addProductToCart(final String itemName, JSONObject reqObj){
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, Constants.kAdd_Product_url, reqObj,
                 new Response.Listener<JSONObject>() {
@@ -134,10 +140,7 @@ public class QRScanActivity extends AppCompatActivity implements BarcodeReader.B
 
                                 BreaQApplication.mInstance.showToast(response.getString(Constants.kStatusMessage));
 
-                                ScanData newData = ScanData.fromJson();
-
                                 Intent intent = new Intent(QRScanActivity.this, YourCart.class);
-                                intent.putExtra("scannedData", "");
                                 startActivity(intent);
                                 if(Utilities.has(ProductScanActivity.mProductScanActivity))
                                 ProductScanActivity.mProductScanActivity.finish();
@@ -174,7 +177,7 @@ public class QRScanActivity extends AppCompatActivity implements BarcodeReader.B
     }
 
     private String getSessionID(){
-        String res = LocalStorage.getStringPreference(mContext,"sessionData", response.toString());
+        String res = LocalStorage.getStringPreference(mContext,"sessionData", "");
         try {
             response = new JSONObject(res);
             if(response.has("session_id")) {
