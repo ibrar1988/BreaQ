@@ -34,14 +34,14 @@ public class ProductScanActivity extends AppCompatActivity {
     }
 
     private void init(){
-        TextView tvTitle = (TextView)findViewById(R.id.tvTitle);
-        String first = "Brea";
-        String next = "<font color='#ff61b6'>Q</font>";
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            tvTitle.setText(Html.fromHtml(first+next));
-        } else {
-            tvTitle.setText(Html.fromHtml(first+next,Html.FROM_HTML_MODE_LEGACY));
-        }
+//        TextView tvTitle = (TextView)findViewById(R.id.tvTitle);
+//        String first = "Brea";
+//        String next = "<font color='#ff61b6'>Q</font>";
+//        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+//            tvTitle.setText(Html.fromHtml(first+next));
+//        } else {
+//            tvTitle.setText(Html.fromHtml(first+next,Html.FROM_HTML_MODE_LEGACY));
+//        }
 
         tvSession_id = (TextView)findViewById(R.id.tvSession_id);
 

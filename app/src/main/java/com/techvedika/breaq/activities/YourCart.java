@@ -71,6 +71,7 @@ public class YourCart extends AppCompatActivity implements View.OnClickListener,
     private void init(){
         Intent intentData = getIntent();
         isFrom = intentData.getStringExtra("isFrom");
+        tvSession_id = (TextView)findViewById(R.id.tvSession_id);
         emptyCartLayout = (LinearLayout)findViewById(R.id.emptyCartLayout);
         cartRecyclerView = (RecyclerView)findViewById(R.id.cartRecyclerView);
         tvCurrentSubTotal =(TextView)findViewById(R.id.tvCurrentSubTotal);
@@ -78,6 +79,20 @@ public class YourCart extends AppCompatActivity implements View.OnClickListener,
         btnCheckout.setOnClickListener(this);
         btnContinueShopping = (Button)findViewById(R.id.btnContinueShopping);
         btnContinueShopping.setOnClickListener(this);
+        String res = LocalStorage.getStringPreference(mContext,"sessionData", "");
+
+        try {
+
+            JSONObject response = new JSONObject(res);
+
+            if(response.has("session_bag_id")) {
+
+                tvSession_id.setText("Your Shopping Bag ID : "+response.getString("session_bag_id").toUpperCase());
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         initRecyclerView();
     }
 
@@ -85,8 +100,15 @@ public class YourCart extends AppCompatActivity implements View.OnClickListener,
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnCheckout:
+                Intent intent = new Intent(mContext, PaymentOption.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);finish();
                 break;
             case R.id.btnContinueShopping:
+                Intent _intent = new Intent(mContext, ProductScanActivity.class);
+                _intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(_intent);
+                finish();
                 break;
             default:
                 break;
@@ -112,36 +134,36 @@ public class YourCart extends AppCompatActivity implements View.OnClickListener,
         try {
 
             JSONObject obj = new JSONObject();
-            obj.put("productPrice", 94000);
+            obj.put("productPrice", 399);
             obj.put("productName", "BQBPN000101");
             obj.put("materialType", "Metallic");
             obj.put("materialColor", "Silver");
-            obj.put("totalItemPrice", 94000);
+            obj.put("totalItemPrice", 399);
             obj.put("materialCount", 1);
 
             mCartItemList.add(0,new ScanData(obj.getDouble("productPrice"), obj.getString("productName"), obj.getString("materialType"), obj.getString("materialColor") , obj.getDouble("totalItemPrice"), "",obj.getInt("materialCount")));
 
             JSONObject obj1 = new JSONObject();
-            obj1.put("productPrice", 4000);
+            obj1.put("productPrice", 270.34);
             obj1.put("productName", "BQBPN000102");
             obj1.put("materialType", "Metallic");
             obj1.put("materialColor", "Pink");
-            obj1.put("totalItemPrice", 4000);
+            obj1.put("totalItemPrice", 270.34);
             obj1.put("materialCount", 1);
 
             mCartItemList.add(1,new ScanData(obj1.getDouble("productPrice"), obj1.getString("productName"), obj1.getString("materialType"), obj1.getString("materialColor") , obj1.getDouble("totalItemPrice"), "",obj1.getInt("materialCount")));
 
             JSONObject obj2 = new JSONObject();
-            obj2.put("productPrice", 50000);
+            obj2.put("productPrice", 550.47);
             obj2.put("productName", "BQBPN000103");
             obj2.put("materialType", "Fabric");
             obj2.put("materialColor", "Gold");
-            obj2.put("totalItemPrice", 50000);
+            obj2.put("totalItemPrice", 550.47);
             obj2.put("materialCount", 1);
 
             mCartItemList.add(2,new ScanData(obj2.getDouble("productPrice"), obj2.getString("productName"), obj2.getString("materialType"), obj2.getString("materialColor") , obj2.getDouble("totalItemPrice"), "",obj2.getInt("materialCount")));
 
-            totalAmount = 94000+4000+50000;
+            totalAmount = 399+270.34+550.47;
 
             // Cart subtotal (1 Item) : Rs 480.00
 

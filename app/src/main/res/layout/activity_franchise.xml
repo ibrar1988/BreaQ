@@ -11,30 +11,37 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black_overlay">
+        >
 
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             app:contentInsetStart="0dp"
             app:contentInsetEnd="0dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="center">
 
-                <TextView
-                    android:id="@+id/tvTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:fontFamily="cursive"
-                    android:textColor="@color/white"
-                    android:textSize="40sp"
-                    android:textStyle="bold"
-                    android:text="BreaQ"/>
+                <!--<TextView-->
+                    <!--android:id="@+id/tvTitle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:fontFamily="cursive"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="40sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="BreaQ"/>-->
 
-            </RelativeLayout>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/app_icon"/>
+
+            </LinearLayout>
 
         </android.support.v7.widget.Toolbar>
 

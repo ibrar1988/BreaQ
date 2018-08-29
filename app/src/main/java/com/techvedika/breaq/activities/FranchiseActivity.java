@@ -53,14 +53,14 @@ public class FranchiseActivity extends AppCompatActivity implements View.OnClick
     }
 
     private void init(){
-        tvTitle = (TextView)findViewById(R.id.tvTitle);
-        String first = "Brea";
-        String next = "<font color='#ff61b6'>Q</font>";
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            tvTitle.setText(Html.fromHtml(first+next));
-        } else {
-            tvTitle.setText(Html.fromHtml(first+next,Html.FROM_HTML_MODE_LEGACY));
-        }
+//        tvTitle = (TextView)findViewById(R.id.tvTitle);
+//        String first = "Brea";
+//        String next = "<font color='#ff61b6'>Q</font>";
+//        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+//            tvTitle.setText(Html.fromHtml(first+next));
+//        } else {
+//            tvTitle.setText(Html.fromHtml(first+next,Html.FROM_HTML_MODE_LEGACY));
+//        }
 
         fetchFranchiseType();
 

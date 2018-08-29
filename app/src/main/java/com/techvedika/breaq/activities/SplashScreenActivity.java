@@ -24,13 +24,13 @@ public class SplashScreenActivity extends AppCompatActivity {
         //#FF1493
         //#ff61b6
 
-        String next = "<font color='#ff61b6'>Q</font>";
-        TextView tv = (TextView)findViewById(R.id.splash_title);
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            tv.setText(Html.fromHtml(first+next));
-        } else {
-            tv.setText(Html.fromHtml(first+next,Html.FROM_HTML_MODE_LEGACY));
-        }
+//        String next = "<font color='#ff61b6'>Q</font>";
+//        TextView tv = (TextView)findViewById(R.id.splash_title);
+//        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+//            tv.setText(Html.fromHtml(first+next));
+//        } else {
+//            tv.setText(Html.fromHtml(first+next,Html.FROM_HTML_MODE_LEGACY));
+//        }
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
